@@ -1,9 +1,11 @@
 {
   "name": "reactive-variable-manager",
-  "description": "REPLACEME - What does this package (or the original one you're wrapping) do?",
-  "homepage": "",
-  "author": "Your Name <your@email> (http://yoursite)",
-  "version": "0.0.1",
-  "git": "",
-  "packages": {}
+  "description": "a manager class for for the meteor reactive variable class",
+  "homepage": "https://github.com/ruzz/reactive-variable-manager.git",
+  "author": "imruzz <ruzz@brightmonkey.ca> (http://brightmonkey.ca)",
+  "version": "0.9.0",
+  "git": "https://github.com/ruzz/reactive-variable-manager.git",
+  "packages": {
+      "reactive-variable": {}
+  }
 }

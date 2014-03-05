@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "REPLACEME - What does this package (or the original one you're wrapping) do?"
+  summary: "a manager class for for the meteor reactive variable class "
 });
 
 Package.on_use(function (api, where) {
