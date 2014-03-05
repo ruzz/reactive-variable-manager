@@ -25,12 +25,9 @@
                 self.registerReactiveVariable(reactiveVariableConfig);
             })
         }
-
-
     }
 
     _ReactiveVariableManager.prototype = {
-
         /**
          * _ReactiveVariableManager Version Number
          * @type String
@@ -89,7 +86,6 @@
         get: function (name) {
             return (this.has(name)) ?
                 this._reactiveVariables[name].get() : undefined;
-
         },
 
         /**
@@ -134,6 +130,4 @@
     } else {
         global['ReactiveVariableManager'] = ReactiveVariableManager;
     }
-
-
 }(this));
