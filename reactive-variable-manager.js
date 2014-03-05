@@ -121,9 +121,9 @@
         },
 
         /**
-         * returns the native ReactiveVariable object
+         * returns the base value of ReactiveVariable object
          * @param {string} name of the registered reactive variable
-         * @return {ReactiveVariable}
+         * @return {?}
          */
         baseValue: function (name) {
             return (this.has(name)) ?
