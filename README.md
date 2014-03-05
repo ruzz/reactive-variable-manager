@@ -28,14 +28,14 @@ it can take an optional config object on creation with optional properties
 { 
   initialize: [
     {
-        name: "selectedGame"
-        ,defaultValue: 'game1'
-        ,dictionary: Session
+        name: "selectedGame",
+        defaultValue: 'game1',
+        dictionary: Session
     },
     {
-        name: "selectedRoom"
-        ,defaultValue: 'room1'
-        ,dictionary: Session
+        name: "selectedRoom",
+        defaultValue: 'room1',
+        dictionary: Session
     },
   ],
   errorHandler: function( errorString ){
