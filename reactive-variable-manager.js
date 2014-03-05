@@ -107,7 +107,32 @@
          */
         has: function (name) {
             return !!((this._reactiveVariables.hasOwnProperty(name)));
+        },
+
+        /**
+         * returns the native ReactiveVariable object
+         * @param {string} name of the registered reactive variable
+         * @return {ReactiveVariable}
+         */
+        native: function (name) {
+            return (this.has(name)) ?
+                this._reactiveVariables[name] :
+                this._handleError('cannot retrieve for non existent reactive variable');
+        },
+
+        /**
+         * returns the native ReactiveVariable object
+         * @param {string} name of the registered reactive variable
+         * @return {ReactiveVariable}
+         */
+        baseValue: function (name) {
+            return (this.has(name)) ?
+                this._reactiveVariables[name].baseValue() :
+                this._handleError('cannot retrieve for non existent reactive variable');
         }
+
+
+
     };
 
 
