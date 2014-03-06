@@ -129,9 +129,15 @@
             return (this.has(name)) ?
                 this._reactiveVariables[name].baseValue() :
                 this._handleError('cannot retrieve for non existent reactive variable');
+        },
+
+        /**
+         * lists the names of all known ReactiveVariables
+         * @return {Array} Array of ReactiveVariables
+         */
+        list: function () {
+            return _.keys(this._reactiveVariables);
         }
-
-
 
     };
 
