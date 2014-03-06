@@ -1,7 +1,7 @@
 # reactive-variable-manager
 =========================
 
-a manager class for for the meteor reactive variable class (https://github.com/ruzz/Meteor-ReactiveVariable.git) which probably makes the ReactiveVariable a much more interesting and useful tool in your toolbox. 
+a manager class for  the meteor reactive variable class (https://github.com/ruzz/Meteor-ReactiveVariable.git) which probably makes the ReactiveVariable a much more interesting and useful tool in your toolbox.
 
 feel free to pull, fork, frak, or pontificate. i'm open like an all night diner. 
 
@@ -36,7 +36,7 @@ it can take an optional config object on creation with optional properties
         name: "selectedRoom",
         defaultValue: 'room1',
         dictionary: Session
-    },
+    }
   ],
   errorHandler: function( errorString ){
     console.log( 'this is the error string', errorString );
