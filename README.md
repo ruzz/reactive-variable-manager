@@ -84,7 +84,12 @@ the api more or less wraps the existing known api for ReactiveVariable so you sh
 ### unregisterReactiveVariable( name )
   removes/destroys a managed ReactiveVariable 
   
-  ```manager.unregisterReactiveVariable( 'selectedGame' );```  
+  ```manager.unregisterReactiveVariable( 'selectedGame' );```
+
+### list()
+  returns an array of registered ReactiveVariable names
+
+  ```manager.list(); // ["selectedGame", "selectedRoom"]```
 
 
 
