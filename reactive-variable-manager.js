@@ -54,10 +54,13 @@
          * @throws uses passed error handler or exits quietly
          */
         registerReactiveVariable: function (reactiveVariableConfig) {
-            if (!(reactiveVariableConfig && reactiveVariableConfig.hasOwnProperty("name")))
+            if (!(reactiveVariableConfig && reactiveVariableConfig.hasOwnProperty("name"))){
                 this._handleError('cannot create unnamed reactive variables');
+                return;
+            }
 
-            this._reactiveVariables[reactiveVariableConfig.name] = new ReactiveVariable(reactiveVariableConfig);
+            this._reactiveVariables[reactiveVariableConfig.name] =
+                new ReactiveVariable(reactiveVariableConfig);
         },
 
         /**
